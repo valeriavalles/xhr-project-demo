@@ -21,6 +21,15 @@ console.log(searchedForText);
         return response.json()
     }).then(function(data){
        console.log(data.response.docs[0]);
+       const article = data.response.docs[0];
+       const title = article.headline.main;
+       const snippet = article.snippet;
+
+    let li = document.createElement('li');
+    li.className = 'articleClass';
+    li.innerText = snippet;
+
+responseContent.appendChild(li);
       
    })
     .catch(function(error){
