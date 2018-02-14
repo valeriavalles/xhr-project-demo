@@ -1,0 +1,14 @@
+.masthead{
+    background: rgb(118, 190, 8);
+}
+#submit-btn {
+    background: rgb(11, 110, 192);
+}
+section {
+    background: rgb(255, 115, 0);
+}
+
+
+#price {
+    color:green;
+  }
