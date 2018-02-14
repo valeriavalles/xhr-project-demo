@@ -21,7 +21,7 @@ console.log(searchedForText);
         return response.json()
     }).then(function(data){
        console.log(data.response.docs[0]);
-       const article = data.response.docs[0];
+       const article = data.response.docs[0]
        const title = article.headline.main;
        const snippet = article.snippet;
 
